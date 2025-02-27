@@ -1,0 +1,19 @@
+﻿<Window x:Class="LaptopsGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LaptopsGUI"
+        mc:Ignorable="d"
+        Title="Laptop ajánlat" Height="600" Width="800" WindowStyle="None">
+    <Grid>
+        <Label Content="Konfigurációk" HorizontalAlignment="Left" Margin="191,62,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="laptopokListbox" Margin="43,106,379,159" SelectionChanged="laptopokListbox_SelectionChanged"/>
+        <Label x:Name="hanyGyartoHanyGepeLabel" Content="" Margin="82,32,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <Label Content="Részletes adatok" HorizontalAlignment="Left" Margin="559,62,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="reszletesAdatokListbox" Margin="458,106,42,176"/>
+        <Button Content="Kilépés" HorizontalAlignment="Left" Margin="496,448,0,0" VerticalAlignment="Top" Height="24" Width="224" Click="Button_Click"/>
+
+
+    </Grid>
+</Window>
